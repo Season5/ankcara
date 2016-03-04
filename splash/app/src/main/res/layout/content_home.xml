@@ -10,33 +10,64 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.semasuka.splash.home"
-    tools:showIn="@layout/activity_home">
+    tools:showIn="@layout/activity_home"
+    android:background="#fff">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="180dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/ethiopian"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageView5"
+        android:paddingTop="10dp" />
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/nigeria"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/imageView5"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView5"
+        android:src="@drawable/burundi"
+        android:scaleType="fitXY"
+        android:layout_alignBottom="@+id/imageView3"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="127dp" />
+        android:paddingLeft="10dp" />
 
-    <CheckBox
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:id="@+id/imageView6"
+        android:src="@drawable/kenya"
+        android:scaleType="fitXY"
+
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4" />
+
+    <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New CheckBox"
-        android:id="@+id/checkBox"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_height="180dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/southa"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY" />
 </RelativeLayout>
